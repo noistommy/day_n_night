@@ -1,0 +1,64 @@
+.App { 
+  color: #333; 
+  .daynnight {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+  }
+  .test, .test1 {
+    top: 100px;
+    font-size: 6em;
+    font-weight: 900;
+    position: absolute;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+  }
+  .test1 {
+    color: #fff;
+  }
+  .wave-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: calc(100vh - 20px);
+    background: linear-gradient(60deg, #5178AF 0%, #9180B4 100%);
+    &:hover {
+      &:after {
+      content: '3';
+      font-size: 80em;
+      font-weight: 900;
+      position: absolute;
+      color: #fff;
+      opacity: 0.16;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    }
+  }
+  .moon-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    &:hover {
+      &:after {
+      content: '2';
+      font-size: 80em;
+      font-weight: 900;
+      position: absolute;
+      color: #fff;
+      opacity: 0.16;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    }
+  }
+}
